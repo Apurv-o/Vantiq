@@ -1,0 +1,13 @@
+export { Navigation } from './sections/Navigation';
+export { Hero } from './sections/Hero';
+export { StudioIntro } from './sections/StudioIntro';
+export { Capabilities } from './sections/Capabilities';
+export { AutomationMachine } from './sections/AutomationMachine';
+export { SelectedWork } from './sections/SelectedWork';
+export { ProductLab } from './sections/ProductLab';
+export { Architecture } from './sections/Architecture';
+export { Process } from './sections/Process';
+export { Principles } from './sections/Principles';
+export { Insights } from './sections/Insights';
+export { Commission } from './sections/Commission';
+export { Footer } from './sections/Footer';
