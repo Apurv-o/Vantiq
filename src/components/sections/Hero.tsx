@@ -134,7 +134,7 @@ export const Hero: React.FC = () => {
           </p>
 
           {/* Action CTAs */}
-          <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
+          <div className="hero-cta-container" style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
             <a
               href="#selected-work"
               className="btn-primary"
@@ -162,6 +162,7 @@ export const Hero: React.FC = () => {
 
         {/* Cinematic Metric/Status Bar at Bottom of Hero */}
         <div
+          className="hero-metric-bar"
           style={{
             marginTop: '80px',
             paddingTop: '28px',

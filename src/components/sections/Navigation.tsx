@@ -219,7 +219,7 @@ export const Navigation: React.FC = () => {
             <a
               href="#commission"
               onClick={(e) => handleLinkClick(e, '#commission')}
-              className="btn-primary"
+              className="btn-primary desktop-inquire-btn"
               style={{
                 padding: '9px 20px',
                 fontSize: '0.8125rem',

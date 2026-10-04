@@ -406,10 +406,11 @@ button {
     gap: 40px !important;
   }
   .hero-video-loop {
-    right: 50% !important;
-    top: 55% !important;
-    transform: translate(50%, -50%) !important;
-    opacity: 0.38 !important;
+    left: 50% !important;
+    right: auto !important;
+    top: 52% !important;
+    transform: translate(-50%, -50%) !important;
+    opacity: 0.35 !important;
     width: min(85vw, 440px) !important;
   }
 }
@@ -425,6 +426,40 @@ button {
 
 /* Mobile Screens (<= 640px) */
 @media (max-width: 640px) {
+  header {
+    height: 72px !important;
+  }
+  #hero {
+    padding-top: 72px !important;
+    min-height: auto !important;
+  }
+  #hero h1 {
+    font-size: clamp(2.35rem, 9.5vw, 3.6rem) !important;
+    line-height: 1.02 !important;
+    margin-bottom: 20px !important;
+  }
+  #hero p {
+    font-size: 1.05rem !important;
+    margin-bottom: 32px !important;
+  }
+  .hero-cta-container {
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 12px !important;
+  }
+  .hero-cta-container .btn-primary,
+  .hero-cta-container .btn-secondary {
+    width: 100% !important;
+    padding: 14px 20px !important;
+    text-align: center !important;
+  }
+  .hero-metric-bar {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 10px !important;
+    margin-top: 40px !important;
+    padding-top: 20px !important;
+  }
   .card-grid {
     grid-template-columns: 1fr;
   }
@@ -446,6 +481,30 @@ button {
     flex-direction: row !important;
     justifyContent: space-between !important;
     width: 100% !important;
+  }
+}
+
+/* Extra Compact Mobile Phones (<= 480px) */
+@media (max-width: 480px) {
+  .desktop-inquire-btn {
+    display: none !important;
+  }
+  .brand-logo-text {
+    font-size: 1rem !important;
+    letter-spacing: 0.08em !important;
+  }
+  .hero-video-loop {
+    width: min(92vw, 340px) !important;
+    opacity: 0.30 !important;
+  }
+  .vantiq-container {
+    padding: 0 16px !important;
+  }
+  .content-card {
+    padding: 20px 16px !important;
+  }
+  .section-wrapper {
+    padding: var(--space-2xl) 0 !important;
   }
 }
 

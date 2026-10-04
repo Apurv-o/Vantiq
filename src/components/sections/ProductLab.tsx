@@ -441,7 +441,7 @@ export const ProductLab: React.FC = () => {
                 EXTRACTING SEMANTIC ENTITIES &amp; VECTOR MATCHING...
               </div>
             ) : extractionDone ? (
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '32px' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: '24px' }}>
                 {/* Left: Candidate Profile Card */}
                 <div style={{ backgroundColor: 'var(--color-bg-primary)', padding: '24px', borderRadius: 'var(--radius-md)', border: '1px solid var(--color-border-subtle)' }}>
                   <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--color-accent-primary)', marginBottom: '8px' }}>

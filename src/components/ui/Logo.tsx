@@ -54,6 +54,7 @@ export const Logo: React.FC<LogoProps> = ({ size = 'md', showTagline = false }) 
 
       <div style={{ display: 'flex', flexDirection: 'column' }}>
         <span
+          className="brand-logo-text"
           style={{
             fontFamily: 'var(--font-heading)',
             fontSize: fontSizes[size],
