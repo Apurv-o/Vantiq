@@ -1,5 +1,4 @@
 import React from 'react';
-import { IntelligenceCoreScene } from '../canvas/IntelligenceCoreScene';
 
 export const Hero: React.FC = () => {
   return (
@@ -17,27 +16,24 @@ export const Hero: React.FC = () => {
         overflow: 'hidden',
       }}
     >
-      {/* Three.js Interactive Intelligence Core Canvas */}
-      <IntelligenceCoreScene />
-
-      {/* Endless Looping Video Stream in Background / Right Flank */}
+      {/* Endless Looping Video Stream */}
       <div
         aria-hidden="true"
         style={{
           position: 'absolute',
           top: '50%',
-          right: '5%',
+          right: '4%',
           transform: 'translateY(-50%)',
-          width: 'clamp(320px, 46vw, 640px)',
+          width: 'clamp(340px, 52vw, 760px)',
           aspectRatio: '1 / 1',
           pointerEvents: 'none',
           zIndex: 1,
-          opacity: 0.85,
+          opacity: 0.95,
           mixBlendMode: 'screen',
           borderRadius: '50%',
           overflow: 'hidden',
-          maskImage: 'radial-gradient(circle at center, black 55%, transparent 75%)',
-          WebkitMaskImage: 'radial-gradient(circle at center, black 55%, transparent 75%)',
+          maskImage: 'radial-gradient(circle at center, black 60%, transparent 80%)',
+          WebkitMaskImage: 'radial-gradient(circle at center, black 60%, transparent 80%)',
         }}
         className="hero-video-loop"
       >
