@@ -29,27 +29,26 @@ export const Logo: React.FC<LogoProps> = ({ size = 'md', showTagline = false }) 
         userSelect: 'none',
       }}
     >
-      {/* Minimal Geometric V Symbol */}
+      {/* Vantiq Brand Emblem */}
       <svg
         width={iconDim}
         height={iconDim}
-        viewBox="0 0 32 32"
+        viewBox="0 0 48 48"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true"
         style={{ flexShrink: 0 }}
       >
-        {/* Background container polygon */}
-        <rect width="32" height="32" rx="6" fill="#272824" />
-        {/* Geometric Left Apex */}
+        <defs>
+          <linearGradient id="vantiq-nav-emblem" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="#a855f7" />
+            <stop offset="45%" stopColor="#7c3aed" />
+            <stop offset="100%" stopColor="#38bdf8" />
+          </linearGradient>
+        </defs>
         <path
-          d="M7 8L16 25L19.5 18.5L12.5 8H7Z"
-          fill="var(--color-fg-primary)"
-        />
-        {/* Geometric Right Accent Apex */}
-        <path
-          d="M25 8L16 25L17.5 25L25 11.5V8Z"
-          fill="var(--color-accent-primary)"
+          d="M25.946 44.938c-.664.845-2.021.375-2.021-.698V33.937a2.26 2.26 0 0 0-2.262-2.262H10.287c-.92 0-1.456-1.04-.92-1.788l7.48-10.471c1.07-1.497 0-3.578-1.842-3.578H1.237c-.92 0-1.456-1.04-.92-1.788L10.013.474c.214-.297.556-.474.92-.474h28.894c.92 0 1.456 1.04.92 1.788l-7.48 10.471c-1.07 1.498 0 3.579 1.842 3.579h11.377c.943 0 1.473 1.088.89 1.83L25.947 44.94z"
+          fill="url(#vantiq-nav-emblem)"
         />
       </svg>
 
