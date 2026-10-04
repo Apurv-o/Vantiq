@@ -363,6 +363,12 @@ button {
     grid-template-columns: 1fr !important;
     gap: 40px !important;
   }
+  .hero-video-loop {
+    right: 50% !important;
+    transform: translate(50%, -50%) !important;
+    opacity: 0.35 !important;
+    width: 80vw !important;
+  }
 }
 
 @media (min-width: 901px) {

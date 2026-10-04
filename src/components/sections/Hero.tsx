@@ -20,6 +20,41 @@ export const Hero: React.FC = () => {
       {/* Three.js Interactive Intelligence Core Canvas */}
       <IntelligenceCoreScene />
 
+      {/* Endless Looping Video Stream in Background / Right Flank */}
+      <div
+        aria-hidden="true"
+        style={{
+          position: 'absolute',
+          top: '50%',
+          right: '5%',
+          transform: 'translateY(-50%)',
+          width: 'clamp(320px, 46vw, 640px)',
+          aspectRatio: '1 / 1',
+          pointerEvents: 'none',
+          zIndex: 1,
+          opacity: 0.85,
+          mixBlendMode: 'screen',
+          borderRadius: '50%',
+          overflow: 'hidden',
+          maskImage: 'radial-gradient(circle at center, black 55%, transparent 75%)',
+          WebkitMaskImage: 'radial-gradient(circle at center, black 55%, transparent 75%)',
+        }}
+        className="hero-video-loop"
+      >
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          src="/core-loop.mp4"
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+          }}
+        />
+      </div>
+
       {/* Hero Foreground Content */}
       <div
         className="vantiq-container"
