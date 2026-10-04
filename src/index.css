@@ -333,7 +333,49 @@ button {
   letter-spacing: 0.02em;
 }
 
-/* Responsive Overrides */
+/* Laptop & Compact Desktop Adjustments (1024px to 1280px) */
+@media (max-width: 1280px) {
+  :root {
+    --space-4xl: 80px;
+    --space-5xl: 104px;
+  }
+  .hero-video-loop {
+    right: 2% !important;
+    width: 48vw !important;
+  }
+}
+
+/* Tablet & iPad Portrait / Landscape Adjustments (769px to 1024px) */
+@media (max-width: 1024px) {
+  .hero-video-loop {
+    right: 2% !important;
+    width: 50vw !important;
+    opacity: 0.75 !important;
+  }
+  .architecture-desktop-grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+  .principles-card {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+  .principles-card > div:last-child {
+    border-left: none !important;
+    border-top: 1px solid var(--color-border-subtle) !important;
+    padding-left: 0 !important;
+    padding-top: 20px !important;
+  }
+  .insights-card {
+    grid-template-columns: 1fr auto !important;
+    gap: 20px !important;
+  }
+  .insights-card > div:nth-child(2) {
+    grid-column: 1 / -1 !important;
+  }
+}
+
+/* Tablet & Mobile Breakpoint (<= 900px) */
 @media (max-width: 900px) {
   .section-wrapper {
     padding: var(--space-3xl) 0;
@@ -365,9 +407,10 @@ button {
   }
   .hero-video-loop {
     right: 50% !important;
+    top: 55% !important;
     transform: translate(50%, -50%) !important;
-    opacity: 0.35 !important;
-    width: 80vw !important;
+    opacity: 0.38 !important;
+    width: min(85vw, 440px) !important;
   }
 }
 
@@ -380,12 +423,29 @@ button {
   }
 }
 
+/* Mobile Screens (<= 640px) */
 @media (max-width: 640px) {
   .card-grid {
     grid-template-columns: 1fr;
   }
   .vantiq-container {
     padding: 0 var(--space-md);
+  }
+  .content-card {
+    padding: 24px 20px !important;
+  }
+  .btn-primary, .btn-secondary {
+    width: 100% !important;
+    text-align: center !important;
+  }
+  .insights-card {
+    grid-template-columns: 1fr !important;
+    padding: 24px 20px !important;
+  }
+  .insights-card > div:last-child {
+    flex-direction: row !important;
+    justifyContent: space-between !important;
+    width: 100% !important;
   }
 }
 

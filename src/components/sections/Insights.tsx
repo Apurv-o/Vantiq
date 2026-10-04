@@ -164,7 +164,7 @@ export const Insights: React.FC = () => {
           {INSIGHTS_DATA.map((article) => (
             <article
               key={article.id}
-              className="content-card"
+              className="content-card insights-card"
               style={{
                 padding: '36px 40px',
                 cursor: 'pointer',

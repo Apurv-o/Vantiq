@@ -121,7 +121,7 @@ export const Principles: React.FC = () => {
             return (
               <article
                 key={principle.number}
-                className="content-card"
+                className="content-card principles-card"
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
                 style={{
