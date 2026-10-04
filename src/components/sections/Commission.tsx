@@ -297,7 +297,7 @@ export const Commission: React.FC = () => {
                 )}
 
                 {/* NAME & WORK EMAIL */}
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '20px' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 200px), 1fr))', gap: '20px' }}>
                   <div>
                     <label htmlFor="inquiry-name" className="form-label">
                       NAME <span style={{ color: 'var(--color-accent-primary)' }}>*</span>
@@ -348,7 +348,7 @@ export const Commission: React.FC = () => {
                 </div>
 
                 {/* COMPANY & PROJECT TYPE */}
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '20px' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 200px), 1fr))', gap: '20px' }}>
                   <div>
                     <label htmlFor="inquiry-company" className="form-label">
                       COMPANY / VENTURE <span style={{ color: 'var(--color-accent-primary)' }}>*</span>
@@ -393,7 +393,7 @@ export const Commission: React.FC = () => {
                 </div>
 
                 {/* BUDGET RANGE & TIMELINE */}
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '20px' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 200px), 1fr))', gap: '20px' }}>
                   <div>
                     <label htmlFor="inquiry-budget" className="form-label">
                       BUDGET RANGE

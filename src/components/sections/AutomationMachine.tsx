@@ -189,6 +189,7 @@ export const AutomationMachine: React.FC = () => {
 
         {/* State Toggle Controller */}
         <div
+          className="automation-toggle-bar"
           style={{
             display: 'flex',
             alignItems: 'center',
@@ -201,16 +202,20 @@ export const AutomationMachine: React.FC = () => {
           }}
         >
           <div
+            className="automation-mode-pills"
             style={{
               display: 'inline-flex',
               padding: '4px',
               backgroundColor: 'var(--color-bg-surface)',
               borderRadius: 'var(--radius-pill)',
               border: '1px solid var(--color-border-medium)',
+              maxWidth: '100%',
+              flexWrap: 'wrap',
             }}
           >
             <button
               type="button"
+              className="automation-mode-btn"
               onClick={() => {
                 setMode('manual');
                 setActiveNodeIndex(0);
@@ -231,6 +236,7 @@ export const AutomationMachine: React.FC = () => {
             </button>
             <button
               type="button"
+              className="automation-mode-btn"
               onClick={() => {
                 setMode('automated');
                 setActiveNodeIndex(0);
@@ -276,6 +282,7 @@ export const AutomationMachine: React.FC = () => {
 
         {/* Engineering Diagram Visual Arena */}
         <div
+          className="automation-arena content-card"
           style={{
             backgroundColor: 'var(--color-bg-surface)',
             border: '1px solid var(--color-border-medium)',
@@ -283,6 +290,7 @@ export const AutomationMachine: React.FC = () => {
             padding: '48px 36px',
             boxShadow: 'var(--shadow-card)',
             position: 'relative',
+            overflow: 'hidden',
           }}
         >
           {/* Engineering Blueprint Header */}
@@ -297,6 +305,8 @@ export const AutomationMachine: React.FC = () => {
               color: 'var(--color-fg-muted)',
               letterSpacing: '0.12em',
               textTransform: 'uppercase',
+              flexWrap: 'wrap',
+              gap: '8px',
             }}
           >
             <span>DIAGRAM PROTOCOL // {mode === 'manual' ? 'FLOW-MAN-01' : 'FLOW-AUT-02'}</span>
@@ -307,9 +317,10 @@ export const AutomationMachine: React.FC = () => {
           <div
             role="tablist"
             aria-label="Workflow Nodes"
+            className="automation-nodes-grid"
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 180px), 1fr))',
               gap: '20px',
               position: 'relative',
               marginBottom: '56px',
@@ -392,6 +403,7 @@ export const AutomationMachine: React.FC = () => {
                   {index < currentNodes.length - 1 && (
                     <div
                       aria-hidden="true"
+                      className="automation-node-arrow"
                       style={{
                         position: 'absolute',
                         right: '-14px',
@@ -442,13 +454,14 @@ export const AutomationMachine: React.FC = () => {
           {/* Node Inspector Detailed Breakdown Panel */}
           <div
             id="node-inspector-panel"
+            className="automation-inspector-panel content-card"
             style={{
               padding: '36px',
               backgroundColor: 'var(--color-bg-primary)',
               borderRadius: 'var(--radius-md)',
               border: '1px solid var(--color-border-subtle)',
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
               gap: '36px',
               alignItems: 'center',
             }}
@@ -484,6 +497,7 @@ export const AutomationMachine: React.FC = () => {
             </div>
 
             <div
+              className="automation-inspector-specs"
               style={{
                 borderLeft: '1px solid var(--color-border-medium)',
                 paddingLeft: '32px',
