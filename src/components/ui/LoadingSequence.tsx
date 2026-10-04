@@ -53,6 +53,21 @@ export const LoadingSequence: React.FC<LoadingSequenceProps> = ({ onComplete }) 
       }}
     >
       <div style={{ maxWidth: '320px', width: '100%', padding: '0 24px', textAlign: 'center' }}>
+        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '16px' }}>
+          <svg
+            width="44"
+            height="44"
+            viewBox="0 0 181 181"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <path d="M0 25L37 25L44 34L25 64Z" fill="var(--color-accent-primary)" />
+            <path d="M78 20L111 20L55 110L38 84Z" fill="var(--color-fg-primary)" />
+            <path d="M144 16L181 16L89 165L71 134Z" fill="var(--color-fg-primary)" />
+          </svg>
+        </div>
+
         <div
           style={{
             fontFamily: 'var(--font-heading)',
